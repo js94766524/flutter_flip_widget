@@ -2,7 +2,7 @@ name: flip
 description: A widget provides flip animation.
 version: 0.0.1
 author: Jack Stone
-homepage:
+homepage: https://github.com/js94766524/flutter_flip_widget
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
