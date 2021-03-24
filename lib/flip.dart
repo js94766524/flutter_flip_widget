@@ -11,24 +11,21 @@ class Flip extends StatefulWidget {
   final Axis flipDirection;
 
   const Flip({
-    Key key,
-    @required this.controller,
-    @required this.firstChild,
-    @required this.secondChild,
+    Key? key,
+    required this.controller,
+    required this.firstChild,
+    required this.secondChild,
     this.flipDuration = const Duration(milliseconds: 300),
     this.flipDirection = Axis.horizontal,
-  })  : assert(controller != null),
-        assert(firstChild != null),
-        assert(secondChild != null),
-        super(key: key);
+  }) : super(key: key);
 
   @override
   _FlipState createState() => _FlipState();
 }
 
 class _FlipState extends State<Flip> with SingleTickerProviderStateMixin {
-  AnimationController flipAnimation;
-  bool isFront;
+  late AnimationController flipAnimation;
+  late bool isFront;
 
   @override
   void initState() {
@@ -120,7 +117,7 @@ class FlipController extends ValueNotifier<bool> {
 
   set isFront(v) => value = v;
 
-  void flip(){
+  void flip() {
     value = !value;
   }
 }
