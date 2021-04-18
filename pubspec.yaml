@@ -1,11 +1,11 @@
 name: flip
 description: A widget provides flip animation. Normally wrap tow cards to display more information when tap on the front card.
 version: 2.0.0
-author: Jack Stone <94766524@qq.com>
+#author: Jack Stone <94766524@qq.com>
 homepage: https://github.com/js94766524/flutter_flip_widget
 
 environment:
-  sdk: '>=2.12.0-259.12.beta <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
